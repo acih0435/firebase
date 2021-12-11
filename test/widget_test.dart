@@ -10,6 +10,7 @@ import 'package:mockito/mockito.dart';
 class MockChatController extends GetxService
     with Mock
     implements ChatController {
+  @override
   var messages = <Message>[].obs;
   @override
   Future<void> sendMsg(String text) async {
